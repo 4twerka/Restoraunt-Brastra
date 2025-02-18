@@ -1,0 +1,12 @@
+/* index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Instrument Sans", serif;
+}
+
+.activeHeader {
+  @apply text-headerActive underline;
+}
