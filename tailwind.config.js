@@ -6,6 +6,7 @@ export default {
       colors: {
         headerActive: "#D22020",
         greyText: "#C2C2C2", 
+        backgroundColor: "#090909",
       }
     },
   },

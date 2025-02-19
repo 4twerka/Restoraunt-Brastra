@@ -7,7 +7,7 @@ function Header() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <header className="bg-black flex items-center justify-between p-4">
+        <header className="bg-backgroundColor flex items-center justify-between p-4">
             <img src={logo} alt="logo" className="max-w-[150px]" />
 
             <nav className="hidden md:flex gap-6 text-gray-300">

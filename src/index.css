@@ -10,3 +10,7 @@
 .activeHeader {
   @apply text-headerActive underline;
 }
+
+.cursiveText {
+  font-family: "Playwrite US Trad", serif;
+}
