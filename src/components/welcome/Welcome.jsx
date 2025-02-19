@@ -25,7 +25,7 @@ function Welcome() {
                     Enjoy the charm of our modern, stylish interior.
                 </p>
 
-                <button className="mt-8 flex items-center gap-4 border border-white px-8 py-4 rounded-full text-white text-lg md:text-xl hover:bg-white hover:text-black transition">
+                <button className="mt-8 flex items-center gap-4 border border-white px-8 py-4 rounded-full text-white text-lg md:text-xl transition-all hover:px-12 hover:border-headerActive">
                     <img src={phoneIcon} alt="phone" className="w-6 h-6" />
                     Call or Book
                 </button>

@@ -18,7 +18,7 @@ function Header() {
 
             <div className="hidden md:flex items-center border border-white rounded-full px-5 h-10 max-w-sm">
                 <input 
-                    className="bg-black text-white outline-none placeholder-gray-400 flex-1"
+                    className="text-white outline-none bg-backgroundColor flex-1"
                     type="text" 
                     placeholder="Find Great Food"
                 />
