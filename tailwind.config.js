@@ -7,6 +7,7 @@ export default {
         headerActive: "#D22020",
         greyText: "#C2C2C2", 
         backgroundColor: "#090909",
+        customRed: "#FF0000",
       }
     },
   },
