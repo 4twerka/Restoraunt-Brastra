@@ -3,7 +3,9 @@ import { Header } from "../components/header/Header";
 import { Welcome } from "../components/welcome/Welcome";
 import { About } from "../components/about/About";
 import { Recomend } from "../components/recomend/Recomend";
-import { Cheff } from "../components/cheff/Cheff";
+import { Chef } from "../components/cheff/Chef";
+import { Upcoming } from "../components/upcoming/Upcoming";
+import { Footer } from "../components/footer/Footer";
 
 function HomePage() {
     return (
@@ -12,7 +14,9 @@ function HomePage() {
             <Welcome />
             <About />
             <Recomend />
-            <Cheff />
+            <Chef />
+            <Upcoming />
+            <Footer />
         </div>
     );
 }

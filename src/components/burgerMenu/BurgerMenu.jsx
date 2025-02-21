@@ -4,7 +4,7 @@ import searchButton from "../../assets/icons/search.png";
 function BurgerMenu({ setIsOpen }) {
 
     return (
-        <div className="fixed inset-0 bg-backgroundColor text-white flex items-center justify-center p-4">
+        <div className="fixed inset-0 z-50 bg-backgroundColor text-white flex items-center justify-center p-4">
             <button onClick={() => setIsOpen(false)} className="absolute top-4 right-4 text-5xl">&times;</button>
             <ul className="space-y-6 text-2xl text-center">
                 <li className="hover:text-gray-400 cursor-pointer activeHeader">Home</li>
