@@ -6,9 +6,7 @@ import { Breakfast } from "../components/breakfast/Breackfast";
 function MenuPage() {
     return(
         <div>
-            <Header />
                 <Breakfast />
-            <Footer />
         </div>
     );
 }

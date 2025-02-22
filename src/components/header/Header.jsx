@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import logo from "../../assets/icons/logo.png";
 import searchButton from "../../assets/icons/search.png";
 import { BurgerMenu } from "../burgerMenu/BurgerMenu";
@@ -7,9 +8,9 @@ function Header() {
     const [isOpen, setIsOpen] = useState(false);
 
     const items = [
-        { name: "Home", isActive: true },
-        { name: "Restaurant Menu", isActive: false },
-        { name: "Wines", isActive: false }
+        { name: "Home", path: "/" },
+        { name: "Restaurant Menu", path: "/menu" },
+        { name: "Wines", path: "/wine" }
     ];
 
     return (
@@ -18,7 +19,9 @@ function Header() {
 
             <nav className="hidden md:flex gap-6 text-gray-300">
                 {items.map((item) => (
-                    <a key={item.name} className={`${item.isActive ? "text-headerActive" : ""} hover:text-gray-400 transition cursor-pointer`}>{item.name}</a>
+                    <Link key={item.name} to={item.path} className="hover:text-gray-400 transition cursor-pointer">
+                        {item.name}
+                    </Link>
                 ))}
             </nav>
 

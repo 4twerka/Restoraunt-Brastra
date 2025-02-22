@@ -10,13 +10,11 @@ import { Footer } from "../components/footer/Footer";
 function HomePage() {
     return (
         <div>
-            <Header />
             <Welcome />
             <About />
             <Recomend />
             <Chef />
             <Upcoming />
-            <Footer />
         </div>
     );
 }
