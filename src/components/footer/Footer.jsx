@@ -5,7 +5,7 @@ import instagram from "../../assets/icons/instagram.png";
 
 function Footer() {
     return (
-        <footer className="bg-black text-white py-6 px-4 md:px-10">
+        <footer className="bg-backgroundColor text-white py-6 px-4 md:px-10">
             <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-6 container mx-auto">
                 <div className="flex flex-col items-center md:items-start">
                     <img src={logo} alt="logo" className="w-32" />

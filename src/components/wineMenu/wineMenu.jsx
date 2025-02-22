@@ -42,7 +42,7 @@ function WineMenu() {
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
-        <div className="bg-black text-white py-10 px-5 md:px-20">
+        <div className="bg-backgroundColor text-white py-10 px-5 md:px-20">
             <h2 className="text-center text-3xl font-semibold aladin">Our Wines</h2>
             <div className="flex justify-center mt-2">
                 <hr className="border-red-500 w-16" />

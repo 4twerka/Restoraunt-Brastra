@@ -57,7 +57,7 @@ const parentItems = [
 
 function Breakfast() {
     return (
-        <section className="bg-black text-white py-12">
+        <section className="bg-backgroundColor text-white py-12">
             <div className="container mx-auto px-6">
                 <div className="text-center">
                     <h1 className="text-4xl font-bold">Menu</h1>
