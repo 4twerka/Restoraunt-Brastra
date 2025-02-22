@@ -6,14 +6,20 @@ import { BurgerMenu } from "../burgerMenu/BurgerMenu";
 function Header() {
     const [isOpen, setIsOpen] = useState(false);
 
+    const items = [
+        { name: "Home", isActive: true },
+        { name: "Restaurant Menu", isActive: false },
+        { name: "Wines", isActive: false }
+    ];
+
     return (
         <header className="bg-backgroundColor flex items-center justify-between p-4">
             <img src={logo} alt="logo" className="max-w-[150px]" />
 
             <nav className="hidden md:flex gap-6 text-gray-300">
-                <a className="text-red-500 underline cursor-pointer">Home</a>
-                <a className="cursor-pointer">Restaurant Menu</a>
-                <a className="cursor-pointer">Wines</a>
+                {items.map((item) => (
+                    <a key={item.name} className={`${item.isActive ? "text-headerActive" : ""} hover:text-gray-400 transition cursor-pointer`}>{item.name}</a>
+                ))}
             </nav>
 
             <div className="hidden md:flex items-center border border-white rounded-full px-5 h-10 max-w-sm">
