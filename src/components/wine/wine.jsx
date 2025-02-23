@@ -1,5 +1,5 @@
 import React from "react";
-import background from "../../assets/icons/WineBackground.jpg";
+import background from "../../assets/icons/wineBackground.jpg";
 import logo from "../../assets/icons/logoBigOne.png";
 
 function Wine() {
