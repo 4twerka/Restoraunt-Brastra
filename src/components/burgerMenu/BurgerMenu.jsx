@@ -6,7 +6,7 @@ function BurgerMenu({ setIsOpen }) {
     const items = [
         { name: "Home", path: "/" },
         { name: "Restaurant Menu", path: "/menu" },
-        { name: "Wines", path: "#" }
+        { name: "Wines", path: "/wine" }
     ];
 
     return (
