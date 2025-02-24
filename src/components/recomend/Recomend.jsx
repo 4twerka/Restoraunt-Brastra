@@ -81,8 +81,8 @@ function Recomend() {
             {selectedItem && (
                 <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4 transition-opacity duration-300 ease-in-out animate-fadeIn">
                     <div className="bg-[#1a1a1a] p-6 rounded-lg shadow-lg text-center relative w-full max-w-sm sm:max-w-md scale-95 transition-transform duration-300 ease-in-out animate-modalOpen">
-                        <button onClick={handleClose} className="absolute top-3 right-3 text-white text-4xl hover:text-red-500 transition-colors">&times;</button>
-                        <img src={selectedItem.img} alt={selectedItem.name} className="w-full rounded-md" />
+                        <button onClick={handleClose} className="absolute top-2 right-4 text-white text-4xl hover:text-red-500 transition-colors">&times;</button>
+                        <img src={selectedItem.img} alt={selectedItem.name} className="w-full rounded-md mt-6" />
                         <h3 className="text-white text-xl font-bold mt-4">{selectedItem.name}</h3>
                         <p className="text-customRed text-lg font-semibold mt-2">{selectedItem.price}</p>
                         <p className="text-white text-center px-2">{selectedItem.desc}</p>
