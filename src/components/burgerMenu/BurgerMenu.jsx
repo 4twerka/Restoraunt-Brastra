@@ -27,12 +27,7 @@ function BurgerMenu({ setIsOpen }) {
                     </li>
                 ))}
             </ul>
-            <div className="absolute bottom-10 flex items-center border border-gray-600 rounded-lg p-2 w-3/4 max-w-xs mx-auto">
-                <input type="text" className="bg-transparent outline-none text-white flex-1 px-2" />
-                <button className="p-1">
-                    <img src={searchButton} alt="Search" className="w-5 h-5" />
-                </button>
-            </div>
+            
         </div>
     );
 }
