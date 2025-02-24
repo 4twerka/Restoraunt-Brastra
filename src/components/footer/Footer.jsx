@@ -1,9 +1,16 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import logo from "../../assets/icons/logo.png";
 import facebook from "../../assets/icons/facebook.png";
 import instagram from "../../assets/icons/instagram.png";
 
 function Footer() {
+    const items = [
+        { name: "Home", path: "/" },
+        { name: "Restaurant Menu", path: "/menu" },
+        { name: "Wines", path: "/wine" }
+    ];
+
     return (
         <footer className="bg-backgroundColor text-white py-6 px-4 md:px-10">
             <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-6 container mx-auto">
@@ -17,10 +24,11 @@ function Footer() {
 
                 <nav className="">
                     <ul className="flex flex-col text-center md:flex-row gap-4 md:gap-8 text-gray-300 text-lg">
-                        <li className="cursor-pointer hover:text-white">Home</li>
-                        <li className="cursor-pointer hover:text-white">Menu</li>
-                        <li className="cursor-pointer hover:text-white">Wines</li>
-                        <li className="cursor-pointer hover:text-white">Christmas Dinner</li>
+                        {items.map((item) => (
+                            <Link key={item.name} to={item.path} className="hover:text-gray-400 transition cursor-pointer">
+                            {item.name}
+                        </Link>
+                        ))}
                     </ul>
                 </nav>
             </div>

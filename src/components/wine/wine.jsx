@@ -2,7 +2,7 @@ import React from "react";
 import background from "../../assets/icons/wineBackground.jpg";
 import logo from "../../assets/icons/logoBigOne.png";
 
-function Wine() {
+function Wine({ scrollToWineMenu }) {
     return (
         <section 
             className="relative flex items-center justify-center text-center text-white px-4 sm:px-8"
@@ -20,7 +20,10 @@ function Wine() {
             <div className="flex flex-col items-center max-w-lg sm:max-w-2xl">
                 <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold aladin">The Finest Wines</h1>
                 <p className="text-base sm:text-lg mt-2">from Brastra Collection</p>
-                <button className="mt-6 bg-[#7A2835] hover:bg-[#5A1F27] transition px-5 sm:px-6 py-2 text-white rounded-lg">
+                <button 
+                    className="mt-6 bg-[#7A2835] hover:bg-[#5A1F27] transition px-5 sm:px-6 py-2 text-white rounded-lg"
+                    onClick={scrollToWineMenu}
+                >
                     Explore
                 </button>
             </div>

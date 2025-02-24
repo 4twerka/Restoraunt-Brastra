@@ -1,17 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import redWineImg from "../../assets/icons/redWines.png";
 import whiteWineImg from "../../assets/icons/whiteWines.png";
 import sparklingWineImg from "../../assets/icons/sparklingWines.png";
 import roseImg from "../../assets/icons/roseWines.png";
 import { ChevronDown } from "lucide-react";
 
-function WineMenu() {
-    const menu = [
-        "Red Wines",
-        "White Wines",
-        "Sparkling Wines",
-        "Rose Wines"
-    ];
+function WineMenu({ wineMenuRef }) {
+    const menu = ["Red Wines", "White Wines", "Sparkling Wines", "Rose Wines"];
 
     const wines = {
         "Red Wines": [
@@ -33,25 +28,24 @@ function WineMenu() {
             { name: "Benito Escudero", price: "€15", img: sparklingWineImg },
             { name: "Marqués de Plata", price: "€18", img: sparklingWineImg },
         ],
-        "Rose Wines": [
-            { name: "Ochoa Lágrima", price: "€17", img: roseImg },
-        ]
+        "Rose Wines": [{ name: "Ochoa Lágrima", price: "€17", img: roseImg }],
     };
 
     const [selectedCategory, setSelectedCategory] = useState("Red Wines");
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
-        <div className="bg-backgroundColor text-white py-10 px-5 md:px-20">
+        <div ref={wineMenuRef} className="bg-backgroundColor text-white py-10 px-5 md:px-20">
             <h2 className="text-center text-3xl font-semibold aladin">Our Wines</h2>
             <div className="flex justify-center mt-2">
                 <hr className="border-red-500 w-16" />
             </div>
 
             <div className="sm:hidden flex justify-center mt-6">
-                <button 
-                    onClick={() => setMenuOpen(!menuOpen)} 
-                    className="flex items-center text-lg font-bold bg-gray-800 px-4 py-2 rounded-lg">
+                <button
+                    onClick={() => setMenuOpen(!menuOpen)}
+                    className="flex items-center text-lg font-bold bg-gray-800 px-4 py-2 rounded-lg"
+                >
                     {selectedCategory} <ChevronDown className="ml-2 w-5 h-5" />
                 </button>
             </div>
@@ -59,9 +53,9 @@ function WineMenu() {
             <nav className={`sm:flex justify-center mt-6 text-lg ${menuOpen ? "block" : "hidden"} sm:block transition-all duration-300`}>
                 <div className="sm:flex sm:space-x-6 text-center flex flex-col sm:flex-row items-center">
                     {menu.map((item) => (
-                        <span 
-                            key={item} 
-                            className={`cursor-pointer font-bold block py-2 sm:py-0 ${selectedCategory === item ? 'text-headerActive' : ''}`} 
+                        <span
+                            key={item}
+                            className={`cursor-pointer font-bold block py-2 sm:py-0 ${selectedCategory === item ? "text-headerActive" : ""}`}
                             onClick={() => {
                                 setSelectedCategory(item);
                                 setMenuOpen(false);

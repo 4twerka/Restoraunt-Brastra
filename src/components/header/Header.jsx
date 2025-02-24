@@ -15,7 +15,9 @@ function Header() {
 
     return (
         <header className="bg-backgroundColor flex items-center justify-between p-4">
-            <img src={logo} alt="logo" className="max-w-[150px]" />
+            <Link to={items[0].path}>
+                <img src={logo} alt="logo" className="max-w-[150px]" />
+            </Link>
 
             <nav className="hidden md:flex gap-6 text-gray-300">
                 {items.map((item) => (
