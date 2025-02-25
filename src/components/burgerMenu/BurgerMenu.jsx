@@ -27,7 +27,6 @@ function BurgerMenu({ setIsOpen }) {
                     </li>
                 ))}
             </ul>
-            
         </div>
     );
 }

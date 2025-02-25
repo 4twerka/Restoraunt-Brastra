@@ -78,7 +78,7 @@ function Header() {
             {isOpen && <BurgerMenu setIsOpen={setIsOpen} />}
 
             {showModal && (
-                <div className="fixed z-50 top-0 left-0 w-full h-full flex justify-center items-center bg-black bg-opacity-50">
+                <div className="fixed z-50 top-0 overflow-y-auto left-0 w-full h-full flex justify-center items-center bg-black bg-opacity-50">
                     <div className="bg-white p-6 rounded-md text-black w-1/3">
                         <h2 className="text-xl font-semibold mb-4">Search Results</h2>
                         {searchResults ? (
