@@ -14,7 +14,8 @@ function Header() {
     const items = [
         { name: "Home", path: "/" },
         { name: "Restaurant Menu", path: "/menu" },
-        { name: "Wines", path: "/wine" }
+        { name: "Wines", path: "/wine" },
+        { name: "Our Bot", path: "https://t.me/Brasta_restaurant_bot"}
     ];
 
     const handleSearch = async () => {
