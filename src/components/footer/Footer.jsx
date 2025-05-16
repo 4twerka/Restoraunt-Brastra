@@ -39,10 +39,10 @@ function Footer() {
                 <span>copyright © 2025 Brastra</span>
                 <ul className="flex gap-4 mt-4 md:mt-0">
                     <li>
-                        <img src={facebook} alt="facebook" className="w-6" />
+                        <a href="https://www.facebook.com/share/1FXM53LYE3/"><img src={facebook} alt="facebook" className="w-6" /></a>
                     </li>
                     <li>
-                        <img src={instagram} alt="instagram" className="w-6" />
+                        <a href="https://www.instagram.com/idilliorestaurant?igsh=enI1aHY3bWFqMHFp"><img src={instagram} alt="instagram" className="w-6" /></a>
                     </li>
                 </ul>
             </div>
